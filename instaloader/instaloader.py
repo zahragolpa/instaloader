@@ -844,6 +844,7 @@ class Instaloader:
                 downloaded = self.download_post(post, target='#' + hashtag)
                 if fast_update and not downloaded:
                     break
+        print("count is: " + str(count))
 
     def download_tagged(self, profile: Profile, fast_update: bool = False,
                         target: Optional[str] = None,
